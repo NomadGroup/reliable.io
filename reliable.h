@@ -139,7 +139,7 @@ void reliable_set_printf_function( int (*function)( RELIABLE_CONST char *, ... )
 
 extern void (*netcode_assert_function)( RELIABLE_CONST char *, RELIABLE_CONST char *, RELIABLE_CONST char * file, int line );
 
-#ifndef NDEBUG
+#ifndef RELIABLE_NDEBUG
 #define reliable_assert( condition )                                                        \
 do                                                                                          \
 {                                                                                           \
